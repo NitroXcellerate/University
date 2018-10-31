@@ -74,7 +74,7 @@ public class Student {
 	 */
 	public int getAge() {
 		if (dob != null) {
-			return Years.yearsBetween(new DateTime(), dob).getYears();
+			return Years.yearsBetween(dob, new DateTime()).getYears();
 		}
 		return 0;
 	}
