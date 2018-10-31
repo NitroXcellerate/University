@@ -1,7 +1,3 @@
-# language setting
 language: java
-# jdk tag
-jdk:
- - openjdk8
-
+jdk: openjdk8
 mvn clean install
