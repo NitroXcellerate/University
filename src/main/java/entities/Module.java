@@ -26,6 +26,16 @@ public class Module {
 		this.students = students;
 		this.courses = courses;
 	}
+	
+	/**
+	 * Module Constuctor: 
+	 * Student and Courses list are initalise as blank lists
+	 * @param name - the name of the Modude
+	 * @param id - the module ID
+	 */
+	public Module(String name, String id) {
+		this(name, id, new ArrayList<Student>(), new ArrayList<Course>());
+	}
 
 	/**
 	 * @return the name
