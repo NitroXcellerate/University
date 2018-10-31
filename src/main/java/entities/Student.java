@@ -36,6 +36,16 @@ public class Student {
 	}
 	
 	/**
+	 * Student - A student with a blank module list and no course defined.
+	 * @param name - the name of the student.
+	 * @param dob - the students date of birth.
+	 * @param id - the students's ID.
+	 */
+	public Student(String name, DateTime dob, int id) {
+		this(name, dob, id, null, new ArrayList<Module>());
+	}
+	
+	/**
 	 * Returns the username of the student.
 	 * The username is a concatenation of the students name and their age
 	 * @return String - the students username
