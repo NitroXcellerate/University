@@ -13,7 +13,6 @@ import org.joda.time.Years;
 public class Student {
 	
 	private String name;
-	private int age;
 	private DateTime dob;
 	private int id;
 	private Course course;
@@ -51,7 +50,7 @@ public class Student {
 	 * @return String - the students username
 	 */
 	public String getUsername() {
-		return name + age;
+		return name + this.getAge();
 	}
 
 	/**
