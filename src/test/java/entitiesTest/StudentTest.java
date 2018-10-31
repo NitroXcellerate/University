@@ -37,7 +37,7 @@ public class StudentTest {
 	public void setup() {
 		defaultName = "John Smith";   
 		defaultDob = new DateTime(1997, 5, 21, 0, 0); 
-		defaultAge = Years.yearsBetween(new DateTime(), defaultDob).getYears();                                                                                                                             
+		defaultAge = Years.yearsBetween(defaultDob, new DateTime()).getYears();                                                                                                                             
 		defaultId = 15489635;                                                                                 
 		defaultCourse = new Course("4BP", new DateTime(2018, 9, 3, 0, 0), new DateTime(2019, 5, 17, 0, 0));
 		defaultModules = new ArrayList<Module>();                                               
